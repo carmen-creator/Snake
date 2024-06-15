@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#joc {
+    margin: 0px;
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+    position: relative;
+    /* pentru ca am aici relative, in momentul in care o sa folosesc top lef pentru copii sai o sa fie relativ la #joc la parinte pentru ca nu vreau sa iasa din chenar */
+
+}
+
+/* # joc div, acest selector face referire la toate div-urile care sunt in #joc */
+#joc div {
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+
+    /* pentru a anima sarpele tre sa modificam prop top si left ale aceste divs, atunci divs trebuie sa fie setate la absolute pentru nu a fi ignorate de browser */
+    /* fiind setat absolute, aste inseamna ca divurile din interiorul joc, se for pozitiona in functie de parinte adica #joc si atunci ai nevoie de absolute */
+    position: absolute;
+    /* pentru ca am absolute ambele patratele se aseaza in colt stanga sus, una peste alta */
+    /* acest  */
+    display: inline-block;
+    /* pentru ca am asta se pun in rand patralele */
+}
+
+/* .mama {
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+
+} */
+
+#btnReset {
+    width: 100px;
+    padding: 0.5rem 1rem;
+    margin-left: 50px;
+}
